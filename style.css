@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(118, 21, 21);
+}
+
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: brown;
+    height: 100px;
+}
+
+.heading{
+    margin: 30px 30px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.form{
+    margin: 30px 30px;
+    margin-right: 100px;
+}
+
+.searchBox{
+    padding: 5px 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.searchBtn{
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.searchBtn:hover{
+    background-color: green;
+}
+
+.recipie-container {
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-template-rows: repeat(auto-fit , minmax(300px , 1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+.recipie{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78 , 73 , 73 , 0.1) , -5px -5px -10px rgba(34 , 34 ,34 , 0.5);
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.recipie img{
+    height: 300px;
+}
+
+.recipie h3{
+    font-size: 24px;
+}
+
+.recipie p{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.recipie span{
+    font-weight: bold;
+}
+
+.recipie button{
+    font-size: 20px;
+    font-weight: 600px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 18px auto;
+    background-color: green;
+    color: white;
+}
+
+.recipie button:hover{
+    background-color: #ff5c5c;
+}
+
+.recipie-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #694c2f;
+    -webkit-transform: translate(-50% , -50%);
+    border-radius: 12px;
+    height: 60%;
+    width: 40%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+    color: white;
+    font-family: 'Roboto';
+    padding: 5px 30px;
+}
